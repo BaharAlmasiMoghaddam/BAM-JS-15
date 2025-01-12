@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+  margin: 0;
+  background-color: #f3f4f6;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.palette {
+  display: flex;
+  gap: 10px;
+  margin-top: 200px;
+  margin-bottom: 40px;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.circle.green {
+  background-color: rgba(31, 127, 102, 1);
+}
+.circle.yellow {
+  background-color: rgba(255, 200, 0, 1);
+}
+.circle.orange {
+  background-color: rgba(255, 123, 0, 1);
+}
+.circle.red {
+  background-color: rgba(216, 1, 1, 1);
+}
+.circle.pink {
+  background-color: rgba(223, 4, 70, 1);
+}
+.circle.purple {
+  background-color: rgba(127, 31, 85, 1);
+}
+.circle.blue {
+  background-color: rgba(93, 18, 199, 1);
+}
+
+.circle:hover {
+  transform: scale(1.1);
+}
+
+.rects {
+  display: flex;
+  gap: 10px;
+}
+
+.rect {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cat {
+  position: absolute;
+  bottom: 180px;
+  right: 5px;
+  width: 500px;
+  height: auto;
+}
